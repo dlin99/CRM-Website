@@ -18,14 +18,18 @@ Project for the Django Crash Course taught by Dennis Ivy. <br>
 7. run http://localhost:8000/
 
 # Functions:
-- only for logged in users:
-  - redirect to login page if you're not logged in
-  - signup link and password reset link 
+- Login:
+  - Redirect to login page if you're not logged in
+  - Signup link and password reset link 
   ![image](https://github.com/dlin99/CRM-Website/blob/main/demo/login.png)
 - Sign up:
   - Use `python manage.py createsuperuser` to create superuser/admin user
   - Create customer user with the website
   ![image](https://github.com/dlin99/CRM-Website/blob/main/demo/signup.png)
 - Customer User:
-  - dummy text
-  - dummy text
+  - You can see all your orders (product, note, date and status) after logging in
+  - Logout your account from the top right 
+  ![image](https://github.com/dlin99/CRM-Website/blob/main/demo/customer1.png)
+  - Settings to change your personal information (Name, Phone, Email and Photo)
+  - With default image
+  ![image](https://github.com/dlin99/CRM-Website/blob/main/demo/customer2.png)
