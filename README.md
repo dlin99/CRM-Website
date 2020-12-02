@@ -20,12 +20,14 @@ Project for the Django Crash Course taught by Dennis Ivy. <br>
 # Functions:
 - only for logged in users:
   - redirect to login page if you're not logged in
-  - signup link and password reset link
-<img src="demo/login.png" width="720px">
+  - signup link and password reset link 
+  - <img src="demo/login.png" width="720px">
+
 - Sign up:
   - Use `python manage.py createsuperuser` to create superuser/admin user
   - Create customer user with the website
-<img src="demo/signup.png" width="720px">
+  - <img src="demo/signup.png" width="720px">
+
 - Customer User:
   - dummy text
   - dummy text
