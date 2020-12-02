@@ -1,6 +1,6 @@
 # CRM-Website 
 CRM website built with django <br>
-Project for the Django Crash Course taught by Dennis Ivy. 
+Project for the Django Crash Course taught by Dennis Ivy. <br>
 (https://www.youtube.com/playlist?list=PL-51WBLyFTg2vW-_6XBoUpE7vpmoR3ztO)
 
 # Tech & Tools:
@@ -9,7 +9,7 @@ Project for the Django Crash Course taught by Dennis Ivy.
 3. Database: SQLite
 
 # To use:
-1. git clone this repository to your device
+1. git clone this repository to your computer
 2. `python3 -m venv venv`
 3. `. venv/bin/activate`
 4. `pip install -r requirements.txt`
@@ -18,11 +18,14 @@ Project for the Django Crash Course taught by Dennis Ivy.
 7. run http://localhost:8000/
 
 # Functions:
-1. only for logged in users
-2. customer v.s. admin user
-
-
-
-
-<img src="demo/test1.png" width="720px">
-
+- only for logged in users:
+  - redirect to login page if you're not logged in
+  - signup link and password reset link
+<img src="demo/login.png" width="720px">
+- Sign up:
+  - Use `python manage.py createsuperuser` to create superuser/admin user
+  - Create customer user with the website
+<img src="demo/signup.png" width="720px">
+- Customer User:
+  - dummy text
+  - dummy text
