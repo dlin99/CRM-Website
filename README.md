@@ -33,3 +33,16 @@ Project for the Django Crash Course taught by Dennis Ivy. <br>
   - Settings to change your personal information (Name, Phone, Email and Photo)
   - With default image
   ![image](https://github.com/dlin99/CRM-Website/blob/main/demo/customer2.png)
+- Admin User (Superuser)
+  - Access to a dashboard after loggin in
+  - Show orders statistics, customers and the last 5 orders
+  - (todo) Create Customer 
+  ![image](https://github.com/dlin99/CRM-Website/blob/main/demo/admin_dashboard.png)
+  - View a certain customer
+  - Update Customer (todo), Place Orders, Search, Update and Delete orders
+  ![image](https://github.com/dlin99/CRM-Website/blob/main/demo/admin_view_customer.png)
+  ![image](https://github.com/dlin99/CRM-Website/blob/main/demo/admin_order_related.png)
+  - Access to all the products 
+  ![image](https://github.com/dlin99/CRM-Website/blob/main/demo/admin_products.png)
+
+

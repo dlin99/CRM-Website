@@ -131,7 +131,7 @@ def products(request):
 def customer(request, pk):
 	customer = Customer.objects.get(id=pk)
 
-	orders = customer.order_set.all()
+	orders = customer.order_set.all().order_by('-date_created')
 	order_count = orders.count()
 
 	myFilter = OrderFilter(request.GET, queryset=orders)
