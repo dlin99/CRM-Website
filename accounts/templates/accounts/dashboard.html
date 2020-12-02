@@ -44,7 +44,7 @@
 					<th>Remove</th>
 				</tr>
 
-				{% for order in orders %}
+				{% for order in last_5_orders %}
 					<tr>
 						<td>{{ order.product }}</td>
 						<td>{{ order.date_created }}</td>

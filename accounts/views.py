@@ -16,6 +16,7 @@ from .forms import OrderForm, CreateUserForm, CustomerForm
 from .filters import OrderFilter
 from .decorators import unauthenticated_user, allowed_users, admin_only
 
+from django.utils import timezone 
 
 @unauthenticated_user
 def registerPage(request):
@@ -63,22 +64,25 @@ def logoutUser(request):
 @login_required(login_url='login')
 @admin_only
 def home(request):
-	orders = Order.objects.all()
-	customers = Customer.objects.all()
 
+	customers = Customer.objects.all()
 	total_customers = customers.count()
 
+	orders = Order.objects.all()
 	total_orders = orders.count()
 	delivered = orders.filter(status='Delivered').count()
 	pending = orders.filter(status='Pending').count()
 
+	last_5_orders = Order.objects.filter(date_created__lte=timezone.now()).order_by('-date_created')[:5]
+	
 	context = {
 			'orders': orders,
 			'customers': customers,
 			'total_customers': total_customers,
 			'total_orders': total_orders,
 			'delivered': delivered,
-			'pending': pending
+			'pending': pending,
+			'last_5_orders': last_5_orders
 			}
 	return render(request, 'accounts/dashboard.html', context)
 
