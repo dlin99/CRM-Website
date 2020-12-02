@@ -40,7 +40,13 @@
 	<div class="col">
 		<div class="card card-body">
 			<form method="get">
-				{{ myFilter.form }}
+
+				{{ myFilter.form.product.label }}: {{ myFilter.form.product }}
+				{{ myFilter.form.status.label }}: {{ myFilter.form.status }}
+				{{ myFilter.form.note.label }}: {{ myFilter.form.note }}
+				Start Date: {{ myFilter.form.start_date }}
+				End Date: {{ myFilter.form.end_date }}
+
 
 		    <button class="btn btn-primary" type="submit">Search</button>
 		  </form>
