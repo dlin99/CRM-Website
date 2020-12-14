@@ -3,6 +3,9 @@ CRM website built with django <br>
 Project for the Django Crash Course taught by Dennis Ivy. <br>
 (https://www.youtube.com/playlist?list=PL-51WBLyFTg2vW-_6XBoUpE7vpmoR3ztO)
 
+# Live Deployment:
+- http://dlin99.pythonanywhere.com/
+
 # Tech & Tools:
 1. Backend: Django 3.1.3
 2. Frontend: Bootstrap 4.3.1 
